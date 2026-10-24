@@ -1,0 +1,1 @@
+document.getElementById('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(document.getElementById('bib').textContent);document.getElementById('copy-status').textContent='BibTeX copied.';}catch{document.getElementById('copy-status').textContent='Select and copy the BibTeX text above.';}});
